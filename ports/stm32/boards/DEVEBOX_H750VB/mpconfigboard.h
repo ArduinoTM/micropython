@@ -12,7 +12,7 @@
 #define MICROPY_HW_FLASH_FS_LABEL   "DEVEBOXH7"
 
 // 1 = use internal flash (1 MByte)
-// 0 = use onboard SPI flash (512 KByte) Winbond W25X40
+// 0 = use onboard SPI flash (8 MByte) Winbond W25Q64
 #define MICROPY_HW_ENABLE_INTERNAL_FLASH_STORAGE (0)
 
 #define MICROPY_HW_ENABLE_RTC       (1)
@@ -101,8 +101,7 @@ void DEVEBOX_H750VB_board_early_init(void);
 // If using onboard SPI flash
 #if !MICROPY_HW_ENABLE_INTERNAL_FLASH_STORAGE
 
-// W25X40 SPI Flash = 64 Mbit (8 MByte)
-// #define MICROPY_HW_SPIFLASH_SIZE_BITS (64 * 1024 * 1024)
+// W25Q64 SPI Flash = 64 Mbit (8 MByte)
 #define MICROPY_HW_SPIFLASH_SIZE_BITS   (64 * 1024 * 1024)
 #define MICROPY_HW_SPIFLASH_CS         (pin_B6)
 #define MICROPY_HW_SPIFLASH_SCK        (pin_B2)
