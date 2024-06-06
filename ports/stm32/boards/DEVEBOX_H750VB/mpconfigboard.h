@@ -94,7 +94,7 @@ void DEVEBOX_H750VB_board_early_init(void);
 #define MICROPY_HW_USRSW_PRESSED    (0)
 
 // LEDs
-#define MICROPY_HW_LED1             (pin_A1)   // yello
+#define MICROPY_HW_LED1             (pin_A1)   // yellow
 #define MICROPY_HW_LED_ON(pin)      (mp_hal_pin_low(pin))
 #define MICROPY_HW_LED_OFF(pin)     (mp_hal_pin_high(pin))
 
@@ -103,10 +103,6 @@ void DEVEBOX_H750VB_board_early_init(void);
 
 // W25X40 SPI Flash = 64 Mbit (8 MByte)
 // #define MICROPY_HW_SPIFLASH_SIZE_BITS (64 * 1024 * 1024)
-// #define MICROPY_HW_SPIFLASH_CS      (pin_B6)
-// #define MICROPY_HW_SPIFLASH_SCK     (pin_B2)
-// #define MICROPY_HW_SPIFLASH_MISO    (pin_D11)
-// #define MICROPY_HW_SPIFLASH_MOSI    (pin_D12)
 #define MICROPY_HW_SPIFLASH_SIZE_BITS   (64 * 1024 * 1024)
 #define MICROPY_HW_SPIFLASH_CS         (pin_B6)
 #define MICROPY_HW_SPIFLASH_SCK        (pin_B2)
