@@ -54,6 +54,8 @@ void DEVEBOX_H750VB_board_early_init(void);
 #define MICROPY_HW_FLASH_LATENCY    FLASH_LATENCY_5
 
 // UART config
+#define MICROPY_HW_UART1_TX         (pin_A9)
+#define MICROPY_HW_UART1_RX         (pin_A10)
 #define MICROPY_HW_UART2_TX         (pin_D5)
 #define MICROPY_HW_UART2_RX         (pin_D6)
 #define MICROPY_HW_UART2_RTS        (pin_D4)
